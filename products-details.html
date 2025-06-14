@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col min-h-screen bg-gray-100">
+  <nav class="bg-green-600 text-white px-6 py-4 shadow-md">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between">
+      <a href="products.html" class="text-2xl font-bold">MyStore</a>
+      <div class="w-full md:w-auto mt-4 md:mt-0 flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
+        <a href="products.html" class="hover:text-green-300">Home</a>
+        <a href="products.html" class="hover:text-green-300">Products</a>
+        <a href="contact.html" class="hover:text-green-300">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <main class="flex-grow flex items-center justify-center px-4 py-12">
+    <form action="products.html" method="post" class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md space-y-6">
+      <h2 class="text-3xl font-bold text-green-700 text-center">Buy Now</h2>
+
+      <div>
+        <label for="product" class="block mb-2 font-semibold text-gray-700">Product Name</label>
+        <input
+          id="product"
+          name="product"
+          type="text"
+          placeholder="Enter product name"
+          required
+          class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"
+        />
+      </div>
+
+      <div>
+        <label for="name" class="block mb-2 font-semibold text-gray-700">Your Name</label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          placeholder="Enter your name"
+          required
+          class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"
+        />
+      </div>
+
+      <div>
+        <label for="email" class="block mb-2 font-semibold text-gray-700">Your Email</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="Enter your email"
+          required
+          class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"
+        />
+      </div>
+
+      <div>
+        <label for="phone" class="block mb-2 font-semibold text-gray-700">Your Phone Number</label>
+        <input
+          id="phone"
+          name="phone"
+          type="tel"
+          placeholder="Enter your phone number"
+          required
+          class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"
+        />
+      </div>
+
+      <button
+        type="submit"
+        class="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-md text-lg font-semibold transition"
+      >
+        Confirm Purchase
+      </button>
+    </form>
+  </main>
+
+ <footer class="bg-green-700 text-white py-12 mt-auto">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div>
+      <h3 class="text-xl font-bold mb-4">About MyStore</h3>
+      <p class="text-gray-200 text-sm leading-relaxed">
+        MyStore is your trusted online shop for natural and herbal products. We offer high-quality, eco-friendly products delivered straight to your doorstep. Our mission is to promote health and wellness through nature's best.
+      </p>
+    </div>
+  
+    <div>
+      <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+      <ul class="space-y-2 text-gray-200 text-sm">
+        <li><a href="products.html" class="hover:text-green-300">Home</a></li>
+        <li><a href="products.html" class="hover:text-green-300">Products</a></li>
+        <li><a href="about.html" class="hover:text-green-300">About Us</a></li>
+        <li><a href="contact.html" class="hover:text-green-300">Contact</a></li>
+        <li><a href="faq.html" class="hover:text-green-300">FAQs</a></li>
+              </ul>
+    </div>
+    <div>
+      <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+      <ul class="space-y-3 text-gray-200 text-sm">
+        <li><span class="font-semibold">Address:</span> Maripur, Hawksbay Road Karachi.</li>
+        <li><span class="font-semibold">Phone:</span> 03323108509</li>
+        <li><span class="font-semibold">Email:</span> gnkhatri81@gmail.com</li>
+        <li class="flex space-x-4 mt-2">
+          <a href="https://www.facebook.com" aria-label="Facebook" class="hover:text-green-300">📘</a>
+          <a href="https://www.twitter.com" aria-label="Twitter" class="hover:text-green-300">🐦</a>
+          <a href="https://www.instagram.com" aria-label="Instagram" class="hover:text-green-300">📸</a>
+          <a href="https://www.linkedin.com" aria-label="LinkedIn" class="hover:text-green-300">💼</a>
+        </li>
+      </ul>
+    </div>
+        <div>
+      <h3 class="text-xl font-bold mb-4">Subscribe to Newsletter</h3>
+      <p class="text-gray-200 text-sm mb-4">
+        Get latest updates, offers, and health tips directly in your inbox.
+      </p>
+      <form action="contact.html" method="post" class="flex flex-col space-y-3">
+        <input
+          type="email"
+          name="newsletter-email"
+          placeholder="Enter your email"
+          required
+          class="px-4 py-2 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-400"
+        />
+        <button
+          type="submit"
+          class="bg-green-600 hover:bg-green-700 text-white py-2 rounded-md font-semibold transition"
+        >
+          Subscribe
+        </button>
+      </form>
+    </div>
+
+  </div>
+  
+  <div class="max-w-7xl mx-auto px-6 mt-12 border-t border-green-500 pt-6 text-center text-sm text-gray-300">
+    &copy; 2025 MyStore. All rights reserved. Designed with ❤️ by Saad.
+  </div>
+</footer>
+
+</body>
+</html>

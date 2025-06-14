@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
+    <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-indigo-600">ModernAuth API Documentation</h1>
+    <p class="mb-6 text-base sm:text-lg">
+      This is the official documentation for the <strong>ModernAuth RESTful API</strong>. Use this guide to integrate authentication and user management features into your web or mobile app.
+    </p>
+    <hr class="border-gray-300 dark:border-gray-700 my-6">
+    <section class="mb-10">
+      <h2 class="text-xl sm:text-2xl font-semibold mb-2">🔐 Authentication</h2>
+      <p class="mb-4">All requests must include a Bearer Token in the header. You can obtain this token from the login endpoint.</p>
+      <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-md font-mono text-sm overflow-x-auto">
+        Authorization: Bearer <code>&lt;your_token_here&gt;</code>
+      </div>
+    </section>
+    <section class="mb-10">
+      <h2 class="text-lg sm:text-xl font-semibold mb-2">🔑 Login</h2>
+      <code class="bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded inline-block mb-2 text-sm">POST /api/auth/login</code>
+      <p class="mb-2">Authenticate a user and receive a JWT token.</p>
+
+      <p class="font-semibold mt-4">Request Body:</p>
+      <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded-md text-sm overflow-x-auto">
+{
+  "email": "user@example.com",
+  "password": "yourPassword"
+}</pre>
+      <p class="font-semibold mt-4">Response:</p>
+<pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded-md text-sm overflow-x-auto">
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+}
+      </pre>
+    </section>
+    <section class="mb-10">
+      <h2 class="text-lg sm:text-xl font-semibold mb-2">👤 Get User Profile</h2>
+      <code class="bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded inline-block mb-2 text-sm">GET /api/user/profile</code>
+      <p class="mb-2">Returns the profile details of the currently authenticated user.</p>
+      <p class="font-semibold mt-4">Headers:</p>
+      <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded-md text-sm overflow-x-auto">
+Authorization: Bearer &lt;your_token&gt;
+      </pre>
+      <p class="font-semibold mt-4">Response:</p>
+      <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded-md text-sm overflow-x-auto">
+{
+  "id": "12345",
+  "name": "John Doe",
+  "email": "user@example.com",
+  "createdAt": "2025-01-01T00:00:00Z"
+}
+      </pre>
+    </section>
+    <section class="mb-10">
+      <h2 class="text-lg sm:text-xl font-semibold mb-2">🚪 Logout</h2>
+      <code class="bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded inline-block mb-2 text-sm">POST /api/auth/logout</code>
+      <p class="mb-2">Logs out the user by invalidating the current token.</p>
+
+      <p class="font-semibold mt-4">Response:</p>
+      <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded-md text-sm overflow-x-auto">
+{
+  "message": "Successfully logged out"
+}
+      </pre>
+    </section>
+    <section class="mb-10">
+      <h2 class="text-xl sm:text-2xl font-semibold mb-2">⚠️ Error Handling</h2>
+      <p>Common errors and status codes returned by the API:</p>
+      <ul class="list-disc pl-6 mt-3 space-y-2 text-sm sm:text-base">
+        <li><strong>400 Bad Request:</strong> Missing or invalid parameters</li>
+        <li><strong>401 Unauthorized:</strong> Invalid or expired token</li>
+        <li><strong>404 Not Found:</strong> Endpoint or resource not found</li>
+        <li><strong>500 Internal Server Error:</strong> Unexpected issue on server</li>
+      </ul>
+    </section>
+    <div class="text-center mt-10">
+      <a href="index.html" 
+   class="inline-block mt-4 px-4 py-2 text-indigo-600 bg-indigo-100 rounded-lg shadow-sm hover:bg-indigo-200 hover:text-indigo-800 hover: font-semibold transition-all duration-300">
+  ← Back to Home
+</a>
+    </div>
+  </div>
+</body>
+</html>

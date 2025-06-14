@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 p-5 sm:p-10">
+  <div class="max-w-3xl mx-auto">
+    <h1 class="text-3xl sm:text-4xl font-bold mb-6 border-b pb-2">📝 Feedback</h1>
+
+    <section class="mb-8">
+      <p class="text-base sm:text-lg leading-relaxed">
+        We value your feedback! Your suggestions and reviews help us improve our service and create a better experience for everyone.
+      </p>
+    </section>
+    <section class="bg-white dark:bg-gray-800 p-5 sm:p-6 rounded shadow mb-10">
+      <h2 class="text-xl sm:text-2xl font-bold mb-4">Share Your Experience</h2>
+      <form class="space-y-4">
+        <input
+          type="text"
+          placeholder="Your Name"
+          class="w-full p-2 rounded bg-gray-200 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-sm sm:text-base"
+        />
+        <input
+          type="email"
+          placeholder="Your Email (optional)"
+          class="w-full p-2 rounded bg-gray-200 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-sm sm:text-base"
+        />
+        <textarea
+          placeholder="Write your feedback here..."
+          class="w-full p-2 rounded bg-gray-200 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 h-24 sm:h-32 text-sm sm:text-base"
+        ></textarea>
+        <button
+          type="submit"
+          class="w-full sm:w-auto px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 text-sm sm:text-base"
+        >
+          Send Feedback
+        </button>
+      </form>
+    </section>
+    <section class="bg-white dark:bg-gray-800 p-5 sm:p-6 rounded shadow">
+      <h2 class="text-lg sm:text-xl font-semibold mb-4">Recent Feedback</h2>
+      <div class="space-y-4">
+        <div class="p-4 border-l-4 border-blue-500 bg-blue-50 dark:bg-gray-700 rounded text-sm sm:text-base">
+          <p><strong>Ali Raza:</strong> “Amazing service! Loved the quick response from support.”</p>
+        </div>
+        <div class="p-4 border-l-4 border-green-500 bg-green-50 dark:bg-gray-700 rounded text-sm sm:text-base">
+          <p><strong>Sara Khan:</strong> “The UI is very user-friendly and responsive. Great job!”</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

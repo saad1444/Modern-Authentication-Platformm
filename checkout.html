@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-500">
+  <nav class="bg-white dark:bg-gray-800 shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold text-primary">ModernAuth</a>
+      <ul class="hidden md:flex space-x-8 text-gray-700 dark:text-gray-300">
+        <li><a href="index.html" class="hover:text-primary transition">Home</a></li>
+        <li><a href="products.html" class="hover:text-primary transition">Products</a></li>
+        <li><a href="cart.html" class="hover:text-primary transition">Cart</a></li>
+        <li><a href="profile.html" class="hover:text-primary transition">Profile</a></li>
+      </ul>
+       </svg>
+      </button>
+    </div>
+  </nav>
+  <main class="max-w-3xl mx-auto px-4 py-10">
+    <h1 class="text-3xl font-bold mb-8">Checkout</h1>
+    <form class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow space-y-6" id="checkoutForm">
+      <section>
+        <h2 class="text-xl font-semibold mb-4">Shipping Details</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input type="text" name="fullName" placeholder="Full Name" required
+            class="p-3 rounded border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-100" />
+          <input type="text" name="address" placeholder="Address" required
+            class="p-3 rounded border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-100" />
+          <input type="text" name="city" placeholder="City" required
+            class="p-3 rounded border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-100" />
+          <input type="text" name="postalCode" placeholder="Postal Code" required
+            class="p-3 rounded border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-100" />
+          <input type="text" name="country" placeholder="Country" required
+            class="p-3 rounded border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-100" />
+          <input type="tel" name="phone" placeholder="Phone Number" required
+            class="p-3 rounded border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-100" />
+        </div>
+      </section>
+      <section>
+        <h2 class="text-xl font-semibold mb-4">Payment Information</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input type="text" name="cardNumber" placeholder="Card Number" required maxlength="19"
+            class="p-3 rounded border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-100" />
+          <input type="text" name="expiryDate" placeholder="Expiry Date (MM/YY)" required maxlength="5"
+            class="p-3 rounded border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-100" />
+          <input type="text" name="cvv" placeholder="CVV" required maxlength="4"
+            class="p-3 rounded border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-100" />
+        </div>
+      </section>
+      <section>
+        <h2 class="text-xl font-semibold mb-4">Order Summary</h2>
+        <div class="bg-gray-100 dark:bg-gray-700 p-4 rounded">
+          <div class="flex justify-between mb-2">
+            <span>Product 1 x 1</span>
+            <span>$20.00</span>
+          </div>
+          <div class="flex justify-between mb-2">
+            <span>Product 2 x 2</span>
+            <span>$70.00</span>
+          </div>
+          <div class="border-t border-gray-300 dark:border-gray-600 mt-3 pt-3 font-semibold flex justify-between">
+            <span>Total</span>
+            <span>$90.00</span>
+          </div>
+        </div>
+      </section>
+      <button type="submit"
+        class="w-full bg-primary hover:bg-blue-700 text-white py-3 rounded font-semibold transition">Place Order</button>
+    </form>
+  </main>
+<footer class="bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 py-12 mt-20 shadow-inner">
+  <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+    <div>
+      <h3 class="text-xl font-bold mb-4 text-primary">ModernAuth</h3>
+      <p class="text-sm leading-relaxed">
+        ModernAuth is your go-to platform for seamless and secure online shopping experiences. We offer a wide range of products with top-notch customer support.
+      </p>
+    </div>
+    <div>
+      <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+      <ul class="space-y-2">
+        <li><a href="index.html" class="hover:text-primary transition">Home</a></li>
+        <li><a href="products.html" class="hover:text-primary transition">Products</a></li>
+        <li><a href="cart.html" class="hover:text-primary transition">Cart</a></li>
+        <li><a href="profile.html" class="hover:text-primary transition">Profile</a></li>
+        <li><a href="contact.html" class="hover:text-primary transition">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+      <ul class="space-y-2 text-sm">
+        <li>Email: <a href="gnkhatri81@gmail.com" class="hover:text-primary transition">gnkhatri81@gmail.com</a></li>
+        <li>Phone: <a href="tel:+1234567890" class="hover:text-primary transition">03323108509</a></li>
+        <li>Address: Maripur, Hawksbay Road Karachi.</li>
+      </ul>
+      <div class="mt-4 flex space-x-4">
+        <a href="https://www.facebook.com" aria-label="Facebook" class="hover:text-primary transition">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M22 12a10 10 0 10-11.5 9.87v-6.97h-3v-2.9h3v-2.2c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.23 2.7.23v3h-1.5c-1.5 0-2 1-2 2v2.7h3.4l-.54 2.9h-2.9v6.97A10 10 0 0022 12z"/></svg>
+        </a>
+        <a href="https://www.twitter.com" aria-label="Twitter" class="hover:text-primary transition">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14.85 5.48 5.48 0 002.4-3.02 10.93 10.93 0 01-3.47 1.33A5.48 5.48 0 0016.1 2a5.48 5.48 0 00-5.4 6.7A15.56 15.56 0 013 4.92a5.5 5.5 0 001.7 7.3A5.45 5.45 0 012 11v.07a5.48 5.48 0 004.4 5.38 5.47 5.47 0 01-2.48.1 5.48 5.48 0 005.1 3.81A11 11 0 012 21a15.57 15.57 0 008.5 2.5c10.2 0 15.8-8.5 15.8-15.8v-.7A11 11 0 0023 3z"/></svg>
+        </a>
+        <a href="https://www.instagram.com" aria-label="Instagram" class="hover:text-primary transition">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 2A3.75 3.75 0 004 7.75v8.5A3.75 3.75 0 007.75 20h8.5a3.75 3.75 0 003.75-3.75v-8.5A3.75 3.75 0 0016.25 4h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6zm4.75-2a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div>
+      <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+      <p class="text-sm mb-4">Subscribe to get the latest updates and offers.</p>
+        <input
+          type="email"
+          placeholder="Your email"
+          required
+          class="w-full px-3 py-2 mb-2 sm:mb-0 rounded border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary"
+        />
+        <button
+          type="submit"
+          class="bg-primary hover:bg-blue-700 text-white px-4 py-2 rounded shadow transition"
+        >
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="border-t border-gray-300 dark:border-gray-700 mt-10 pt-6 text-center text-sm text-gray-500 dark:text-gray-400">
+    <p>
+      &copy; 2025 ModernAuth. All rights reserved. | 
+      <a href="privacy1.html" class="hover:text-primary transition">Privacy Policy</a> | 
+      <a href="terms1.html" class="hover:text-primary transition">Terms of Service</a>
+    </p>
+  </div>
+</footer>
+</body>
+</html>

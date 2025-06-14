@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Document</title>
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      transition: background-color 0.3s, color 0.3s;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-500 ease-in-out">
+  <nav class="bg-white dark:bg-gray-800 shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">ModernAuth</a>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="index.html" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Home</a></li>
+        <li><a href="products.html" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Products</a></li>
+        <li><a href="cart.html" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Cart</a></li>
+        <li><a href="profile.html" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Profile</a></li>
+        <li><a href="faq.html" class="font-semibold underline text-indigo-600 dark:text-indigo-400">FAQ</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main class="max-w-4xl mx-auto p-6">
+    <h1 class="text-4xl font-semibold mb-6 text-center">Frequently Asked Questions</h1>
+    <div class="space-y-4">
+      <details class="bg-white dark:bg-gray-800 rounded-lg p-4 shadow transition hover:shadow-lg cursor-pointer">
+        <summary class="font-semibold text-lg">How do I create an account?</summary>
+        <p class="mt-2 text-gray-700 dark:text-gray-300">You can create an account by clicking on the signup page and filling out the registration form.</p>
+      </details>
+      <details class="bg-white dark:bg-gray-800 rounded-lg p-4 shadow transition hover:shadow-lg cursor-pointer">
+        <summary class="font-semibold text-lg">What payment methods are accepted?</summary>
+        <p class="mt-2 text-gray-700 dark:text-gray-300">We accept all major credit and debit cards including Visa, MasterCard, and American Express.</p>
+      </details>
+      <details class="bg-white dark:bg-gray-800 rounded-lg p-4 shadow transition hover:shadow-lg cursor-pointer">
+        <summary class="font-semibold text-lg">How can I track my order?</summary>
+        <p class="mt-2 text-gray-700 dark:text-gray-300">Once your order is shipped, we will provide you with a tracking number via email.</p>
+      </details>
+      <details class="bg-white dark:bg-gray-800 rounded-lg p-4 shadow transition hover:shadow-lg cursor-pointer">
+        <summary class="font-semibold text-lg">Can I return or exchange items?</summary>
+        <p class="mt-2 text-gray-700 dark:text-gray-300">Yes, returns and exchanges are accepted within 30 days of purchase. Please refer to our return policy for more details.</p>
+      </details>
+      <details class="bg-white dark:bg-gray-800 rounded-lg p-4 shadow transition hover:shadow-lg cursor-pointer">
+        <summary class="font-semibold text-lg">How do I contact customer support?</summary>
+        <p class="mt-2 text-gray-700 dark:text-gray-300">You can reach out to us through the Contact page or by emailing support@modernauth.com.</p>
+      </details>
+    </div>
+  </main>
+</body>
+</html>

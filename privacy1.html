@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3b82f6',
+            bgLight: '#f8fafc',
+            bgDark: '#1e293b',
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-bgLight dark:bg-bgDark text-gray-800 dark:text-white p-4 sm:p-6 md:p-10 max-w-4xl mx-auto">
+  <h1 class="text-2xl sm:text-3xl font-bold mb-6">Privacy Policy</h1>
+
+  <p class="text-sm sm:text-base leading-relaxed">
+    At <strong>YourCompany</strong>, your privacy is important to us. This policy explains how we collect, use, and protect your personal information when you use our website and services.
+  </p>
+
+  <h2 class="text-xl sm:text-2xl font-semibold mt-6 mb-2">Information We Collect</h2>
+  <ul class="list-disc list-inside space-y-2 text-sm sm:text-base leading-relaxed">
+    <li><strong>Personal Data:</strong> We collect information you provide such as your name, email address, phone number, and profile details when you register or update your profile.</li>
+    <li><strong>Usage Data:</strong> We collect data about how you interact with our website to improve your user experience.</li>
+  </ul>
+
+  <h2 class="text-xl sm:text-2xl font-semibold mt-6 mb-2">How We Use Your Information</h2>
+  <ul class="list-disc list-inside space-y-2 text-sm sm:text-base leading-relaxed">
+    <li>To provide, maintain, and improve our services.</li>
+    <li>To personalize your experience and respond to your inquiries.</li>
+    <li>To send important updates, security alerts, and support messages.</li>
+  </ul>
+
+  <h2 class="text-xl sm:text-2xl font-semibold mt-6 mb-2">Data Security</h2>
+  <p class="text-sm sm:text-base leading-relaxed">
+    We implement appropriate security measures to protect your personal information from unauthorized access, alteration, or disclosure.
+  </p>
+
+  <h2 class="text-xl sm:text-2xl font-semibold mt-6 mb-2">Sharing Your Information</h2>
+  <p class="text-sm sm:text-base leading-relaxed">
+    We do not sell, trade, or rent your personal information to third parties. We may share information with trusted partners only to provide services on our behalf and under strict confidentiality agreements.
+  </p>
+
+  <h2 class="text-xl sm:text-2xl font-semibold mt-6 mb-2">Your Rights</h2>
+  <p class="text-sm sm:text-base leading-relaxed">
+    You have the right to access, update, or delete your personal data. Contact us at <a href="mailto:support@example.com" class="text-primary underline">support@example.com</a> for any privacy-related requests.
+  </p>
+
+  <h2 class="text-xl sm:text-2xl font-semibold mt-6 mb-2">Cookies</h2>
+  <p class="text-sm sm:text-base leading-relaxed">
+    Our website uses cookies to enhance user experience. You can control cookie settings through your browser.
+  </p>
+
+  <h2 class="text-xl sm:text-2xl font-semibold mt-6 mb-2">Changes to This Policy</h2>
+  <p class="text-sm sm:text-base leading-relaxed">
+    We may update this policy from time to time. Changes will be posted on this page with the updated date.
+  </p>
+
+  <p class="mt-8 text-xs sm:text-sm text-gray-600 dark:text-gray-400">Last updated: June 2025</p>
+</body>
+</html>
